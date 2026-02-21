@@ -52,13 +52,20 @@ Generates a Z-Score to measure standard deviations from the mean.
 If the Gatekeeper approves the pair, it flashes OVERBOUGHT or OVERSOLD when the Z-score breaches algorithmic thresholds.
 
 VISUAL OUTPUTS
+
 The terminal automatically generates three distinct matplotlib visualizations to verify the math:
 
-Normalized Growth Chart: Re-scales both assets to a baseline of 100 to visualize pure percentage growth over 10 years.
+1. Normalized Growth
+![growth](growth.png)
+   Re-scales both assets to a baseline of 100 to visualize pure percentage growth over 10 years.
 
-The Spread Chart: Plots the historical Rupee divergence, adjusted for Alpha, with the ADF test results embedded directly into the UI.
+2. The Spread & Stationarity Proof
+![spread](spread.png)
+   Plots the historical Rupee divergence, adjusted for Alpha, with the ADF test results embedded directly into the UI.
 
-Z-Score Action Zones: Maps the current spread against standard deviation bands for precision trade entries.
+3. Z-Score Execution Triggers
+![zscore](zscore.png)
+   Maps the current spread against standard deviation bands for precision trade entries.
 
 DEPENDENCIES
 To run this engine locally, you will need the following Python libraries:
